@@ -12,19 +12,18 @@ function styles() {
         .pipe(gulp.dest("./static/css/"));
 }
 
-function scripts() {
-    return gulp.parallel(
-        () => {
-            return gulp.src([ "./src/js/**/*.js", "!./src/js/lib/**/*.js" ])
-                .pipe(babel())
-                .pipe(uglify())
-                .pipe(gulp.dest("./static/js/"));
-        },
-        () => {
-            return gulp.src([ "./src/js/lib/**/*.js" ])
-                .pipe(gulp.dest("./static/js/lib/"));
-        }
-    );
+var scripts = gulp.parallel(userScripts, libScripts);
+
+function libScripts() {
+    return gulp.src([ "./src/js/lib/**/*.js" ])
+        .pipe(gulp.dest("./static/js/lib/"));
+}
+
+function userScripts() {
+    return gulp.src([ "./src/js/**/*.js", "!./src/js/lib/**/*.js" ])
+        .pipe(babel())
+        .pipe(uglify())
+        .pipe(gulp.dest("./static/js/"));
 }
 
 function images() {

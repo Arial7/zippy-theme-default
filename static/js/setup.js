@@ -1,0 +1,1 @@
+"use strict";document.addEventListener("DOMContentLoaded",function(){var e=document.querySelector("button#submit"),t=e.querySelector(".icon"),n=e.querySelector(".loader");e.addEventListener("click",function(){e.classList.toggle("disabled"),n.classList.toggle("hidden"),t.classList.toggle("hidden")})});
