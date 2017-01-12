@@ -1,0 +1,28 @@
+{
+  "name": "zippy-theme-default",
+  "version": "1.0.0",
+  "description": "This theme ships with every zippy install as default theme. You should not need to clone this repo directly, it is used as submodule in the arial7/zippy repo.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arial7/zippy-theme-default.git"
+  },
+  "author": "Pascal 'Arial7' Riesinger <riesinger.pascal@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Arial7/zippy-theme-default/issues"
+  },
+  "homepage": "https://github.com/Arial7/zippy-theme-default#readme",
+  "dependencies": {
+    "babel-preset-es2015": "^6.18.0",
+    "gulp": "gulpjs/gulp#4.0",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.0.0"
+  }
+}

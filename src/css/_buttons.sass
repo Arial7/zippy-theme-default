@@ -1,0 +1,39 @@
+a.btn, button
+  display: inline-flex
+  justify-content: space-between
+  cursor: pointer
+  font-size: #{$base-font-size - 3}
+  line-height: 1.25
+  border-radius: 3px
+  border: none
+  outline: none
+  background-color: $color-accent
+  color: $color-text-light-primary
+  transition: border-color .15s ease-in-out
+  font-weight: bold
+  height: $dimen-button-height
+  line-height: $dimen-button-height
+  padding: 0 15px
+  transition: filter .15s ease-in-out
+
+  &:hover
+    filter: brightness(1.1)
+
+  &.icon-button.right-icon
+    padding: 0 0 0 15px
+
+  &.icon-button.left-icon
+    padding: 0 15px 0
+
+  &.positive
+    background-color: $color-button-positive
+
+    i.icon
+      background-color: $color-button-positive-icon
+
+  i.icon
+    padding: #{$dimen-button-height / 2 - 8px}
+    border-radius: 3px
+    margin-left: 20px
+
+

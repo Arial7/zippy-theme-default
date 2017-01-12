@@ -1,0 +1,39 @@
+@font-face
+  font-family: "flat-icons"
+  font-weight: normal
+  src: url("/static/fonts/flat-ui-icons-regular.woff")
+
+i.icon
+  font-size: inherit
+  font-style: normal
+  font-family: "flat-icons"
+  line-height: 1
+  display: inline-flex
+  height: $base-font-size
+  width: $base-font-size
+
+  &::before
+    height: $base-font-size
+    width: $base-font-size
+    display: inline-block
+
+  &.arrow-right::before
+    content: "\e607"
+
+  &.chat::before
+    content: "\e62d"
+
+  &.link::before
+    content: "\e642"
+
+  &.star::before
+    content: "\e63e"
+
+  &.account::before
+    content: "\e631"
+
+  &.email::before
+    content: "\e632"
+
+  &.lock::before
+    content: "\e633"
