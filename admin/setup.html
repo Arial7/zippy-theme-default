@@ -17,16 +17,16 @@
             <section>
                 <h2>Site info</h2>
                 <div class="icon-input">
-                    <input name="inp-site-name" placeholder="Name">
+                    <input id="site-name" name="inp-site-name" placeholder="Name">
                     <i class="icon chat"></i>
                 </div>
                 <div class="icon-input">
-                    <input name="inp-site-name" placeholder="URL">
+                    <input id="base-url" name="inp-site-name" placeholder="URL">
                     <i class="icon link"></i>
                 </div>
                 <div class="icon-input select-labeled">
                     <label for="inp-site-theme">Theme</label>
-                    <select name="inp-site-theme">
+                    <select id="theme" name="inp-site-theme">
                         <option value="default">default</option>
                         <option value="blank">blank</option>
                     </select>
@@ -37,23 +37,24 @@
                 <h2>Account info</h2>
                 <p>This information is used to setup your primary admin account</p>
                 <div class="icon-input">
-                    <input name="inp-account-name" placeholder="Your Name">
+                    <input id="acc-name" name="inp-account-name" placeholder="Your Name">
                     <i class="icon account"></i>
                 </div>
                 <div class="icon-input">
-                    <input name="inp-account-email" placeholder="your@mail.com" type="email">
+                    <input id="acc-mail" name="inp-account-email" placeholder="your@mail.com" type="email">
                     <i class="icon email"></i>
                 </div>
                 <div class="icon-input">
-                    <input name="inp-account-pass" placeholder="Password" type="password">
+                    <input id="acc-pass" name="inp-account-pass" placeholder="Password" type="password">
                     <i class="icon lock"></i>
                 </div>
                 <div class="icon-input">
-                    <input name="inp-account-pass-repeat" placeholder="Repeat Password" type="password">
+                    <input id="acc-pass-confirm" name="inp-account-pass-repeat" placeholder="Repeat Password" type="password">
                     <i class="icon lock"></i>
                 </div>
             </section>
-            <div class="flex-container justify--end">
+            <div class="flex-container justify--between">
+                <div id="signup-error"></div>
                 <button id="submit" class="positive icon-button right-icon">
                     OK
                     <div class="button-icon-area">

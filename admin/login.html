@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Zippy Login</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+        <link rel="stylesheet" href="/static/css/login.css">
+    </head>
+    <body>
+        <main>
+            <section>
+                <h2>Login</h2>
+                <div class="icon-input">
+                    <input id="mail" name="inp-email" placeholder="your@mail.com" type="email">
+                    <i class="icon email"></i>
+                </div>
+                <div class="icon-input">
+                    <input id="pass" name="inp-account-pass" placeholder="Password" type="password">
+                    <i class="icon lock"></i>
+                </div>
+            </section>
+            <div id="action-row" class="flex-container justify--between">
+                <div id="signup-error"></div>
+                <button id="submit" class="positive icon-button right-icon">
+                    OK
+                    <div class="button-icon-area">
+                    <i class="icon check"></i>
+                    <div class="loader iconify hidden"></div>
+                    </div>
+                </button>
+            </div>
+        </main>
+        <script src="/static/js/login.js"></script>
+    </body>
+</html>

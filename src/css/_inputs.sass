@@ -1,7 +1,6 @@
 .input-field
   margin: 10px 0
 
-
 input, select
   font-size: #{$base-font-size - 3}
   line-height: 1.25
@@ -11,11 +10,15 @@ input, select
   outline: none
   background-color: $color-grey-200
   color: $color-text-primary
-  transition: border-color .15s ease-in-out
+  transition: border-color .15s ease-in-out, background-color .25s ease-in-out
 
   &::-webkit-input-placeholder, &:-moz-placeholder, &::-moz-placeholder, &:-ms-input-placeholder
-   color: $color-divider
-   font-size: #{$base-font-size - 3}
+    color: $color-divider
+    font-size: #{$base-font-size - 3}
+
+  &.invalid
+    background-color: $color-input-invalid
+
 
 // For some reason, selects are higher?
 select
