@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", () => {
     let passField = document.body.querySelector("input#pass");
 
     let submitButton = document.body.querySelector("button#submit");
+    let submitButtonLoader = submitButton.querySelector(".loader");
+    let submitButtonCheck = submitButton.querySelector(".icon.check");
 
     submitButton.addEventListener("click", () => {
         submitButton.classList.toggle("disabled");

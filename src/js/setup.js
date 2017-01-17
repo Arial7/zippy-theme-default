@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
         submitButtonCheck.classList.toggle("hidden");
 
         if (accountPasswordConfirmField.value === accountPasswordField.value) {
-            fetch("/api/setup", {
+            fetch("/api/initialSetup", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
@@ -45,6 +45,11 @@ document.addEventListener("DOMContentLoaded", () => {
                     return response.json();
                 })
                 .then(( res ) => {
+                    if (res.success == true) {
+                        window.location.pathname = "/adm"
+                    } else {
+                        signupErrorText.innerText = res.error
+                    }
                     console.log(res);
                 })
 
